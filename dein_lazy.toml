@@ -1,0 +1,12 @@
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'rhysd/endwize.vim'
+on_ft = ['rb']
+hook_add = '''
+" append information when filetype is ruby, c or cpp.
+let g:endwize_add_info_filetypes = ['ruby', 'c', 'cpp']
+'''
+
