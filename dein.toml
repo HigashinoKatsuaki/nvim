@@ -8,7 +8,7 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 hook_add = '''
-  nnoremap <Space>d :Defx -split=vertical -winwidth=30 -direction=topleft -columns=git:icons:mark:indent:filename:type -search=`expand('%:p')`<CR>
+  nnoremap <silent> <Space>d :Defx -split=vertical -winwidth=30 -direction=topleft -columns=git:icons:mark:indent:filename:type -search=`expand('%:p')`<CR>
   autocmd FileType defx call s:defx_my_settings()
     function! s:defx_my_settings() abort
       call defx#custom#column('icon', {
