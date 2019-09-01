@@ -1,12 +1,39 @@
+# toml
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
+# ES6
+[[plugins]]
+repo = 'herringtondarkholme/yats.vim'
+on_ft = ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx']
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = './install.sh nightly'
+merged = '0'
+hook_add = '''
+  nnoremap gd <Plug>(coc-definition)
+  nnoremap gr <Plug>(coc-references)
+  nnoremap cr <Plug>(coc-rename)
+'''
+on_ft = ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx', 'c', 'cpp']
+
+# ruby
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+on_ft = ['ruby']
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+on_ft = ['ruby']
+
 [[plugins]]
 repo = 'rhysd/endwize.vim'
-on_ft = ['rb']
+on_ft = ['ruby']
 hook_add = '''
 " append information when filetype is ruby, c or cpp.
 let g:endwize_add_info_filetypes = ['ruby', 'c', 'cpp']
 '''
-

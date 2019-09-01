@@ -107,12 +107,3 @@ repo = 'ryanoasis/vim-devicons'
 [[plugins]]
 repo = 'kassio/neoterm'
 
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-build = './install.sh nightly'
-merged = '0'
-hook_add = '''
-  nnoremap <silent> gd <Plug>(coc-definition)
-  nnoremap <silent> gr <Plug>(coc-references)
-  nnoremap <silent>cr <Plug>(coc-rename)
-'''
