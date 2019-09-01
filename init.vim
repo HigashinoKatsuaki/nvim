@@ -56,4 +56,8 @@ nnoremap tn :tabnew<CR>:T t<CR>i
 nnoremap <Space>noh :noh<CR>
 tnoremap <C-j> <C-\><C-n>
 
-colorscheme railscasts
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
+
+" :call dein#recache_runtimepath()
