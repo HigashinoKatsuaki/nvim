@@ -87,6 +87,9 @@ let g:lightline = {
 repo = 'jpo/vim-railscasts-theme'
 
 [[plugins]]
+repo = 'ayu-theme/ayu-vim'
+
+[[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]
