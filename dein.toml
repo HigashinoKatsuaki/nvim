@@ -5,6 +5,7 @@ repo = 'roxma/vim-hug-neovim-rpc'
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# tree view
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 hook_add = '''
@@ -41,11 +42,28 @@ repo = 'kristijanhusak/defx-icons'
 repo = 'kristijanhusak/defx-git'
 
 [[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+# colorscheme
+[[plugins]]
 repo = 'altercation/vim-colors-solarized'
 hook_add = '''
   let g:solarized_termcolors=256
   colorscheme solarized
 '''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+let g:lightline = {
+	\ }
+'''
+
+[[plugins]]
+repo = 'jpo/vim-railscasts-theme'
+
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'
 
 [[plugins]]
 repo = 'junegunn/fzf'
@@ -70,40 +88,29 @@ hook_add = '''
     \                 <bang>0)
 '''
 
+# git
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 hook_add = '''
   nnoremap g1 :diffput<CR>:w<CR>
 '''
 
-[[plugins]]
-repo = 'itchyny/lightline.vim'
-hook_add = '''
-let g:lightline = {
-	\ }
-'''
-
-[[plugins]]
-repo = 'jpo/vim-railscasts-theme'
-
-[[plugins]]
-repo = 'ayu-theme/ayu-vim'
-
+# surround
 [[plugins]]
 repo = 'tpope/vim-surround'
 
+# comment out
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
+# syntax
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
 
+# editorconfig
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
+# terminal
 [[plugins]]
 repo = 'kassio/neoterm'
-
