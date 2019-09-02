@@ -37,27 +37,29 @@ if dein#check_install()
   call dein#install()
 endif
 
-set noswapfile
-set number             "行番号を表示
-set autoindent         "改行時に自動でインデントする
+set noswapfile         " ファイルをスワップしない
+set number             " 行番号を表示
+set autoindent         " 改行時に自動でインデントする
 set smartindent
-set tabstop=2          "タブを何文字の空白に変換するか
-set shiftwidth=2       "自動インデント時に入力する空白の数
-set expandtab          "タブ入力を空白に変換
-set splitright         "画面を縦分割する際に右に開く
-set clipboard=unnamed  "yank した文字列をクリップボードにコピー
-set hls                "検索した文字をハイライトする
-set laststatus=2
+set tabstop=2          " タブを何文字の空白に変換するか
+set shiftwidth=2       " 自動インデント時に入力する空白の数
+set expandtab          " タブ入力を空白に変換
+set splitright         " 画面を縦分割する際に右に開く
+set clipboard=unnamed  " yank した文字列をクリップボードにコピー
+set hls                " 検索した文字をハイライトする
+set laststatus=2       " 常にステータスを表示
 
+" alias
 inoremap <C-j> <Esc>
 nnoremap gb gT
 nnoremap sn :tabnew<CR>:Tnew<CR>i
-nnoremap tn :tabnew<CR>:T t<CR>i
 nnoremap <Space>noh :noh<CR>
 tnoremap <C-j> <C-\><C-n>
 
+" colorscheme
 set termguicolors
 let ayucolor="dark"
 colorscheme ayu
 
+" プラグインを再インストールしたいときなど
 " :call dein#recache_runtimepath()
